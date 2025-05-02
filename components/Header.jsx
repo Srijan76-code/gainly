@@ -1,12 +1,5 @@
 import React from 'react'
-import {
 
-    SignInButton,
-    SignUpButton,
-    SignedIn,
-    SignedOut,
-    UserButton,
-} from '@clerk/nextjs'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -26,9 +19,7 @@ const Header = () => {
                 <SignInButton />
                 <SignUpButton />
             </SignedOut>
-            <SignedIn>
-                <UserButton />
-            </SignedIn>
+
         </div>
     )
 }

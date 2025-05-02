@@ -12,8 +12,15 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import Hero from "./Hero";
+import {
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
+
 
 export function NavbarDemo() {
+
   const navItems = [
     {
       name: "Pricing",
@@ -37,10 +44,29 @@ export function NavbarDemo() {
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
+
+          {/* Authentication */}
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton href="/sign-in" variant="secondary">Signin</NavbarButton>
-            <NavbarButton href="/sign-up" variant="primary">SignUp</NavbarButton>
+
+            {/* When SignedOut */}
+            <SignedOut>
+              <NavbarButton href="/sign-in" variant="secondary">Signin</NavbarButton>
+              <NavbarButton href="/sign-up" variant="primary">SignUp</NavbarButton>
+            </SignedOut>
+
+            {/* When LoggedIn */}
+            <SignedIn>
+              <UserButton
+                appearance={{
+                  elements: {
+                    userButtonAvatarBox: "h-12 w-12", // Custom avatar size
+                  },
+                }}
+              />
+            </SignedIn>
+
+
           </div>
         </NavBody>
 
@@ -80,8 +106,8 @@ export function NavbarDemo() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      
-      <Hero/>
+
+      <Hero />
     </div>
   );
 }
