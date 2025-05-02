@@ -12,7 +12,7 @@ const isProtectedRoute = createRouteMatcher(
 
 
 export default clerkMiddleware(async (auth, req) => {
-    // Restrict admin routes to users with specific permissions
+    
     const {userId} =await auth()
 
     if (!userId && isProtectedRoute(req)) {

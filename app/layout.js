@@ -18,21 +18,7 @@ export default function RootLayout({ children }) {
     <html class="dark" lang="en">
       <body className={`${inter.className} `}>
 
-      <NavbarDemo/>
-        {/* header */}
-        {/* <Header/> */}
-
-        {/* main  body*/}
-        {/* <main >
-        {children}
-        </main> */}
-
-        {/* footer */}
-        {/* <footer className="bg-black" >
-          <div className="container mx-auto text-center" >
-            <p className="" >Welcome to Gainly</p>
-          </div>
-        </footer> */}
+      {children}
 
 
       </body>

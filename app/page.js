@@ -1,11 +1,13 @@
-import Hero from "@/components/Hero";
-import { Button } from "@/components/ui/button";
+
+import { NavbarDemo } from "@/components/Navbar";
+
 
 
 export default function Home() {
   return (
     <div  >
-      <Hero/>
+      <NavbarDemo/>
+      
     </div>
     
   );
