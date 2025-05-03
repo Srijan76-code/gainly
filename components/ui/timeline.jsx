@@ -26,10 +26,12 @@ export const Timeline = ({
 
   return (
     <div
-      className="w-full bg-white dark:bg-[#07080A] font-sans md:px-10"
+      className="w-full bg-white dark:bg-[#07080A] font-sans md:px-10   sm:ml-25 lg:ml-40 "
       ref={containerRef}>
-      <div className="max-w-7xl text-center mx-auto pt-30 pb-10 px-4 md:px-8 lg:px-10 bg-no-repeat bg-cover" style={{ backgroundImage: "url('./hero/bg-lines.png')" }}>
-        <h2 className="text-2xl mx-auto font-bold md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+
+
+      <div className="max-w-7xl ml-0 text-center mx-auto pt-30 pb-10 px-4  md:px-8 lg:px-10 mr-20  bg-no-repeat bg-cover" style={{ backgroundImage: "url('./hero/bg-lines.png')" }}>
+        <h2 className="text-2xl mx-auto font-bold md:text-4xl mb-4  text-black dark:text-white max-w-4xl">
           Features
         </h2>
         <p
@@ -37,7 +39,9 @@ export const Timeline = ({
           Everything you need to manage your finances
         </p>
       </div>
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+
+
+      <div ref={ref} className="relative max-w-7xl  mx-auto pb-20">
         {data.map((item, index) => (
           <div key={index} className="flex justify-start pt-10 md:pt-40 md:gap-10">
             <div

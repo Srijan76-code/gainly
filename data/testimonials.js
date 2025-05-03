@@ -1,11 +1,12 @@
 export const testimonials = [
     {
-      quote:
-        "Gainly has completely changed how I handle my personal finances. The AI insights helped me uncover hidden spending patterns and improve savings.",
-      name: "Supriya Sharma",
-      designation: "Startup Founder, Bengaluru",
-      src: "https://img.freepik.com/free-photo/photorealistic-lawyer-day-celebration_23-2151053985.jpg?t=st=1746266466~exp=1746270066~hmac=5c0093dc5d7af91f60bbc8f39ef8014cf335868ea9ee1020ceae8ab055901e5f&w=2000"
-    },
+        quote:
+          "Receipt scanning and automatic categorisation have made tracking my personal spending effortless. Highly recommend Gainly!",
+        name: "Aruhi Joshi",
+        designation: "Chartered Accountant, Delhi",
+        src: "https://img.freepik.com/free-photo/person-holding-cup-coffee_23-2150698719.jpg?t=st=1746266967~exp=1746270567~hmac=ac48741dc112bfa01a5ffc47dc38bc085f35e53e71e88e5c757f220589f03a24&w=1380",
+      },
+
     {
       quote:
         "With seamless bank integration and receipt scanning, I no longer have to manually track expenses. It's a total game-changer.",
@@ -15,11 +16,12 @@ export const testimonials = [
     },
     {
         quote:
-          "Receipt scanning and automatic categorisation have made tracking my personal spending effortless. Highly recommend Gainly!",
-        name: "Aruhi Joshi",
-        designation: "Chartered Accountant, Ahmedabad",
-        src: "https://img.freepik.com/free-photo/person-holding-cup-coffee_23-2150698719.jpg?t=st=1746266967~exp=1746270567~hmac=ac48741dc112bfa01a5ffc47dc38bc085f35e53e71e88e5c757f220589f03a24&w=1380",
+          "Gainly has completely changed how I handle my personal finances. The AI insights helped me uncover hidden spending patterns and improve savings.",
+        name: "Supriya Sharma",
+        designation: "Startup Founder, Bengaluru",
+        src: "https://img.freepik.com/free-photo/photorealistic-lawyer-day-celebration_23-2151053985.jpg?t=st=1746266466~exp=1746270066~hmac=5c0093dc5d7af91f60bbc8f39ef8014cf335868ea9ee1020ceae8ab055901e5f&w=2000"
       },
+
     {
       quote:
         "Gainly’s smart budget planning and analytics have helped me stay on top of my goals. The interface is clean, intuitive, and made for real use.",

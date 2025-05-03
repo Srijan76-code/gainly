@@ -22,6 +22,7 @@ import { TimelineDemo } from "./TimelineDemo";
 import Testimonials from "./Testimonials";
 import Working from "./Working";
 import Trust from "./Trust";
+import Footer from "./Footer";
 
 
 
@@ -113,18 +114,21 @@ export function NavbarDemo() {
         </MobileNav>
       </Navbar>
       <Hero />
-      <Divider/>
-      
-      <Trust/>
-      <Divider/>
-      <Working/>
-      <Divider/>
-      <TimelineDemo/>
-      <Divider/>
+      <Divider />
 
-      <Testimonials/>
+      <Trust />
+      <Divider />
+      <Working />
+      <Divider />
+      <TimelineDemo />
+      <Divider />
 
-      
+      <Testimonials />
+      {/* <Divider /> */}
+
+
+
+
     </div>
   );
 }

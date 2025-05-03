@@ -9,7 +9,7 @@ export function TimelineDemo() {
             title: "Direct Bank Integration",
             content: (
                 <div className="w-1/2 object-contain" >
-                    <video className=" bg-transparent rounded-4xl" autoPlay muted loop src="/features/a1.mp4"></video>
+                    <img className="rounded-4xl"  src="/features/a1.png"/>
                 </div>
             ),
         },
@@ -17,7 +17,7 @@ export function TimelineDemo() {
             title: "Smart Receipt Scanner",
             content: (
                 <div className="w-1/2 object-contain" >
-                    <video className=" bg-transparent rounded-4xl" autoPlay muted loop src="/features/a2.mp4"></video>
+                     <img className="rounded-4xl"  src="/features/a2.png"/>
                 </div>
             ),
         },
@@ -25,7 +25,7 @@ export function TimelineDemo() {
             title: "Advanced Analytics ",
             content: (
                 <div className="w-1/2 object-contain" >
-                    <video className=" bg-transparent rounded-4xl" autoPlay muted loop src="/features/a3.mp4"></video>
+                     <img className="rounded-4xl"  src="/features/a3.png"/>
                 </div>
             ),
         },
@@ -33,7 +33,7 @@ export function TimelineDemo() {
             title: "Multi-Account Support ",
             content: (
                 <div className="w-1/2 object-contain" >
-                    <video className=" bg-transparent rounded-4xl" autoPlay muted loop src="/features/a4.mp4"></video>
+                     <img className="rounded-4xl"  src="/features/a4.png"/>
                 </div>
             ),
         },
@@ -41,7 +41,7 @@ export function TimelineDemo() {
 
     ];
     return (
-        <div className="relative w-full mx-auto overflow-clip " >
+        <div className="relative w-full  mx-auto  overflow-clip " >
             <Timeline data={data} />
         </div>
     );
