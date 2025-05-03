@@ -21,6 +21,7 @@ import Divider from "./Divider";
 import { TimelineDemo } from "./TimelineDemo";
 import Testimonials from "./Testimonials";
 import Working from "./Working";
+import Trust from "./Trust";
 
 
 
@@ -112,6 +113,9 @@ export function NavbarDemo() {
         </MobileNav>
       </Navbar>
       <Hero />
+      <Divider/>
+      
+      <Trust/>
       <Divider/>
       <Working/>
       <Divider/>
