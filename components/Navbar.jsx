@@ -17,6 +17,11 @@ import {
   SignedOut,
   UserButton,
 } from '@clerk/nextjs'
+import Divider from "./Divider";
+import { TimelineDemo } from "./TimelineDemo";
+import Testimonials from "./Testimonials";
+import Working from "./Working";
+
 
 
 export function NavbarDemo() {
@@ -106,8 +111,16 @@ export function NavbarDemo() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-
       <Hero />
+      <Divider/>
+      <Working/>
+      <Divider/>
+      <TimelineDemo/>
+      <Divider/>
+
+      <Testimonials/>
+
+      
     </div>
   );
 }
