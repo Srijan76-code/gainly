@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
             referrerPolicy="no-referrer"
           />
         </head>
-        <body className={`inter.className bg-black`}>
+        <body className={`inter.className bg-[#030304]`}>
 
           {children}
-          <div className=" w-full bg-black" >
+          <div className=" w-full " >
           <Footer /></div>
 
         </body>

@@ -18,11 +18,11 @@ export default function Working() {
             {/* Main Content */}
             <div
                 className="py-20 mb-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-[#07080A] max-w-6xl gap-4 mx-auto px-8" >
-                <Card title="Create Your Account" icon={<img src="/working/a1.png" />}>
+                <Card para="Get started in minutes with our simple and secure sign-up process" title="Create Your Account" icon={<img src="/working/a1.png" />}>
               
-                    <CanvasRevealEffect animationSpeed={5.1} containerClassName="bg-emerald-900" />
+                    <CanvasRevealEffect animationSpeed={5.1} containerClassName="bg-emerald-900" dotSize={2} />
                 </Card>
-                <Card title="Track Your Spending" icon={<img src="/working/a2.png" />}>
+                <Card para="Automatically categorize and track your transactions in real-time" title="Track Your Spending" icon={<img src="/working/a2.png" />}>
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-black"
@@ -35,11 +35,11 @@ export default function Working() {
                     <div
                         className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
                 </Card>
-                <Card title="Get AI Insights" icon={<img src="/working/a3.png" />}>
+                <Card para="Receive AI-powered insights and recommendations to optimize your finances" title="Get AI Insights" icon={<img src="/working/a3.png" />}>
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-sky-600"
-                        colors={[[125, 211, 252]]} />
+                        colors={[[125, 211, 252]]} dotSize={2}/>
                 </Card>
             </div>
         </>
@@ -49,6 +49,7 @@ export default function Working() {
 const Card = ({
     title,
     icon,
+    para,
     children
 }) => {
     const [hovered, setHovered] = React.useState(false);
@@ -67,42 +68,26 @@ const Card = ({
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        className="h-full w-full absolute inset-0">
+                        className="h-full w-full absolute  inset-0">
                         {children}
                     </motion.div>
                 )}
             </AnimatePresence>
             <div className="relative z-20">
                 <div
-                    className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
+                    className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center pt-25 ">
                     {icon}
                 </div>
                 <h2
-                    className="dark:text-white text-center text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+                    className="dark:text-white  text-center text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-55 transition duration-250">
                     {title}
                 </h2>
+                <p
+                    className="dark:text-white  text-center font-light opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4   group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-55 transition duration-250">
+                    {para}
+                </p>
             </div>
         </div>
-    );
-};
-
-const AceternityIcon = () => {
-    return (
-        <svg
-            width="66"
-            height="65"
-            viewBox="0 0 66 65"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white ">
-            <path
-                d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-                stroke="currentColor"
-                strokeWidth="15"
-                strokeMiterlimit="3.86874"
-                strokeLinecap="round"
-                style={{ mixBlendMode: "darken" }} />
-        </svg>
     );
 };
 
