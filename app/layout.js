@@ -1,8 +1,9 @@
-import {  Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,13 @@ export default function RootLayout({ children }) {
             referrerPolicy="no-referrer"
           />
         </head>
-        <body className={inter.className}>{children}</body>
+        <body className={`inter.className bg-black`}>
+
+          {children}
+          <div className=" w-full bg-black" >
+          <Footer /></div>
+
+        </body>
       </html>
     </ClerkProvider>
   );

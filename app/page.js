@@ -1,21 +1,14 @@
-
-import Divider from "@/components/Divider";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import { NavbarDemo } from "@/components/Navbar";
-import { TimelineDemo } from "@/components/TimelineDemo";
+import Home from "@/sections/Home";
 
 
 
-export default function Home() {
+
+export default function Page() {
   return (
-    <div className=" w-full bg-black" >
-      <NavbarDemo/>
-      <Footer/>
-  
-
-      
-    </div>
+    <>
+    <Home/>
+    
+    </>
     
   );
 }

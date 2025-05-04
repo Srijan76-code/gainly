@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Trust = () => {
@@ -9,7 +10,10 @@ const Trust = () => {
             </h2>
             <div className='text-center   w-full flex justify-between '>
                 <div className='pb-50 sm:pb-35'  >
-                    <p className='text-xl sm:text-3xl  font-bold' >100k+</p>
+                    <p className='text-xl sm:text-3xl  font-bold' >
+                        {/* <Image width={640} height={640}  className='-z-20 bg-transparent w-8 h-8' src="/trust/a1.gif" alt="" /> */}
+                        <span>100k+</span>
+                        </p>
                     <p className='text-sm sm:text-lg font-light ' >Active Users</p>
                 </div>
                 <div className='pb-50 sm:pb-35'  >

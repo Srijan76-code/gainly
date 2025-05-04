@@ -8,7 +8,7 @@ const Footer = () => {
                 {/* Quick Links */}
                 <div className=''>
                     <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-                    <ul className="space-y-2 text-gray-400">
+                    <ul className="space-y-2 font-light text-gray-400">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Privacy Policy</a></li>
@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
 
                 {/* Contact */}
-                <div>
+                <div className='font-light'>
                     <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
                     <p className="text-gray-400">Email: contact@gainly.com</p>
                     <p className="text-gray-400 mt-1">Phone: +91 7345676890</p>
@@ -26,7 +26,7 @@ const Footer = () => {
                 {/* Social Links */}
                 <div>
                     <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
-                    <div className="flex justify-center md:justify-start space-x-4 text-gray-400 text-xl">
+                    <div className="flex justify-center md:justify-start space-x-4 font-light text-gray-400 text-xl">
                         <a href="#"><i className="fab fa-facebook"></i></a>
                         <a href="#"><i className="fab fa-twitter"></i></a>
                         <a href="#"><i className="fab fa-linkedin"></i></a>
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
 
             {/* Bottom Text */}
-            <div className="mt-10 text-center text-sm text-gray-500">
+            <div className="font-light mt-10 text-center text-sm text-gray-500">
                 © 2025 Gainly. All rights reserved.
             </div>
 

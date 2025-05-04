@@ -11,35 +11,30 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
-import Hero from "./Hero";
+
 import {
   SignedIn,
   SignedOut,
   UserButton,
 } from '@clerk/nextjs'
-import Divider from "./Divider";
-import { TimelineDemo } from "./TimelineDemo";
-import Testimonials from "./Testimonials";
-import Working from "./Working";
-import Trust from "./Trust";
-import Footer from "./Footer";
 
 
 
-export function NavbarDemo() {
+
+export function NavbarDemo({ children }) {
 
   const navItems = [
     {
       name: "Pricing",
-      link: "#pricing",
+      link: "/pricing",
     },
     {
       name: "About",
-      link: "#about",
+      link: "/about",
     },
     {
       name: "Community",
-      link: "#community",
+      link: "/community",
     },
   ];
 
@@ -112,20 +107,12 @@ export function NavbarDemo() {
             </div>
           </MobileNavMenu>
         </MobileNav>
+
+
       </Navbar>
-      <Hero />
-      <Divider />
 
-      <Trust />
-      <Divider />
-      <Working />
-      <Divider />
-      <TimelineDemo />
-      <Divider />
-
-      <Testimonials />
-      {/* <Divider /> */}
-
+      {children}
+   
 
 
 
