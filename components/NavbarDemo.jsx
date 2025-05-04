@@ -21,7 +21,7 @@ import {
 
 
 
-export function NavbarDemo({ children }) {
+export function NavbarDemo({ children,bg="[#07080A]" }) {
 
   const navItems = [
     {
@@ -41,7 +41,7 @@ export function NavbarDemo({ children }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full bg-[#07080A]">
+    <div className={`relative w-full bg-${bg}`}>
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>

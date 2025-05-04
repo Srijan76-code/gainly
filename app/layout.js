@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
             referrerPolicy="no-referrer"
           />
         </head>
-        <body className={`inter.className bg-[#030304]`}>
+        <body className={`inter.className bg-[#050709]`}>
 
           {children}
           <div className=" w-full " >

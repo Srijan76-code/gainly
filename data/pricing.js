@@ -11,7 +11,6 @@ export const pricingPlans = [
         "Manual Expense Tracking",
         "Basic Receipt Scanning",
         "Up to 1 Bank Account Integration",
-        "Monthly Budget Limits",
         "Basic Insights Dashboard",
       ],
       buttonText: "Get Started",
@@ -26,11 +25,9 @@ export const pricingPlans = [
       video:"/pricing/video/v2.mp4",
       
       features: [
-        "Unlimited Bank Account Integrations",
+        "Unlimited Bank Integrations",
         "Smart Receipt Scanning (AI)",
-        "Custom Budget Goals",
         "Spending Pattern Detection",
-        "Priority Customer Support",
         "Real-Time Alerts & Reports",
       ],
       buttonText: "Upgrade Now",
@@ -49,8 +46,7 @@ export const pricingPlans = [
         "Admin Controls & Analytics",
         "Custom Integrations (APIs)",
         "Advanced Reporting Tools",
-        "Dedicated Account Manager",
-        "Onboarding & Training Support",
+
       ],
       buttonText: "Contact Sales",
       isPopular: false,

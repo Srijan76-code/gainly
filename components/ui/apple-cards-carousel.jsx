@@ -46,13 +46,13 @@ export const Carousel = ({
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
+      carouselRef.current.scrollBy({ left: -950, behavior: "smooth" });
     }
   };
 
   const scrollRight = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
+      carouselRef.current.scrollBy({ left: 950, behavior: "smooth" });
     }
   };
 
@@ -77,7 +77,7 @@ export const Carousel = ({
     <CarouselContext.Provider value={{ onCardClose: handleCardClose, currentIndex }}>
       <div className="relative w-full">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-20"
+          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth [scrollbar-width:none] "
           ref={carouselRef}
           onScroll={checkScrollability}>
           <div
@@ -85,7 +85,7 @@ export const Carousel = ({
 
           <div
             className={cn(
-              "flex flex-row justify-start gap-4 pl-4",
+              "flex flex-row justify-start  ",
               // remove max-w-4xl if you want the carousel to span the full width of its container
               "mx-auto max-w-7xl"
             )}>
@@ -106,21 +106,21 @@ export const Carousel = ({
                   },
                 }}
                 key={"card" + index}
-                className="rounded-3xl last:pr-[5%] md:last:pr-[33%]">
+                className="rounded-3xl ">
                 {item}
               </motion.div>
             ))}
           </div>
         </div>
-        <div className="mr-10 flex justify-end gap-2">
+        <div className="mr-50 flex justify-end gap-2">
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-15 w-15 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}>
             <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
           </button>
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-15 w-15 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}>
             <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
