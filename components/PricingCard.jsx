@@ -7,7 +7,7 @@ import { Carousel } from './ui/apple-cards-carousel';
 
 const PricingCard = () => {
   const cards = pricingPlans.map(({ id, title, price, image, video, subtitle, features, buttonText }, index) => (
-    <div key={id} className='bg-[#050709] relative  mx-auto w-5xl h-300 overflow-hidden'>
+    <div key={id} className='bg-[#050709] relative  mx-auto w-2xl h-230 overflow-hidden'>
       <video className="absolute bg-[#050709] rounded-4xl inset-0 w-full mx-auto h-full object-cover" playsInline autoPlay muted loop src={video}></video>
      
 
@@ -18,7 +18,7 @@ const PricingCard = () => {
           <p className="font-extralight text-white">{subtitle}</p>
         </div>
         <p className="font-bold text-3xl md:text-5xl text-white">{price}</p>
-        <Button bg="transparent">{buttonText}</Button>
+        <Button bg="transparent w-3/4">{buttonText}</Button>
 
         <div className='font-light space-y-1 text-white'>
           {features.map((v, i) => (

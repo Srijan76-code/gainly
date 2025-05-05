@@ -1,6 +1,7 @@
 
 import Cta from '@/components/Cta'
 import Divider from '@/components/Divider'
+import FadeSlideOnView from '@/components/FadeSlideOnView'
 import Hero from '@/components/Hero'
 import { NavbarDemo } from '@/components/NavbarDemo'
 import Testimonials from '@/components/Testimonials'
@@ -15,7 +16,10 @@ const Home = () => {
             <NavbarDemo>
                 <Hero />
                 <Divider />
+                <FadeSlideOnView>
                 <Trust />
+                </FadeSlideOnView>
+
                 <Divider />
                 <Working/>
                 <Divider />
@@ -23,8 +27,7 @@ const Home = () => {
                 <Divider />
                 <Testimonials />
                 <Divider />
-                <Cta />
-                <Divider />
+
 
             </NavbarDemo>
         </div>

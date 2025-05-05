@@ -4,6 +4,8 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import Footer from "@/components/Footer";
+import Cta from "@/components/Cta";
+import Divider from "@/components/Divider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +31,9 @@ export default function RootLayout({ children }) {
 
           {children}
           <div className=" w-full " >
-          <Footer /></div>
+            <Cta />
+            <Divider />
+            <Footer /></div>
 
         </body>
       </html>
