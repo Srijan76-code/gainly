@@ -48,6 +48,7 @@ export function NavbarDemo({ children,bg="[#07080A]" }) {
           <NavbarLogo />
 
           {/* Authentication */}
+          
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
 
