@@ -18,7 +18,7 @@ const Hero = () => {
                 <div className='flex pt-2  lg:pt-8 flex-col justify-center items-center' >
 
                     <Image src={"/hero/spotlight.png"} width={1500} height={1500} className='absolute bottom:1   blur-3xl w-1/2 ' />
-                    <Button bg="[#120f23]" >Get Started</Button>
+                    <Button bg="bg-[#120f23]" >Get Started</Button>
                 </div>
 
             </div>

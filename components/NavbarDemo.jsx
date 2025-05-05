@@ -21,16 +21,16 @@ import {
 
 
 
-export function NavbarDemo({ children,bg="[#07080A]" }) {
+export function NavbarDemo({ children, bg = "[#07080A]" }) {
 
   const navItems = [
     {
-      name: "Pricing",
-      link: "/pricing",
-    },
-    {
       name: "About",
       link: "/about",
+    },
+    {
+      name: "Pricing",
+      link: "/pricing",
     },
     {
       name: "Community",
@@ -48,7 +48,7 @@ export function NavbarDemo({ children,bg="[#07080A]" }) {
           <NavbarLogo />
 
           {/* Authentication */}
-          
+
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
 
@@ -94,16 +94,18 @@ export function NavbarDemo({ children,bg="[#07080A]" }) {
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
+                href="/sign-in"
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full">
-                Login
+                SignIn
               </NavbarButton>
               <NavbarButton
+                href="/sign-up"
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full">
-                Book a call
+                SignUp
               </NavbarButton>
             </div>
           </MobileNavMenu>
@@ -113,7 +115,7 @@ export function NavbarDemo({ children,bg="[#07080A]" }) {
       </Navbar>
 
       {children}
-   
+
 
 
 

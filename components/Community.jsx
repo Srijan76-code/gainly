@@ -4,7 +4,7 @@ import * as Icons from "lucide-react";
 import Title from "./Title";
 const Community = () => {
     return (
-        <div className="max-w-screen m-20">
+        <div className="max-w-screen mb-20">
             <Title title="Join Our Community" sub=" Stay connected across platforms, get the latest updates, and join the conversation.
    "/>
             <div className="space-y-4 w-2/4 mx-auto grid grid-cols-1 sm:grid-cols-3 ">

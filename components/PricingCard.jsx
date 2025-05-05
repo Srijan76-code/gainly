@@ -12,7 +12,7 @@ const PricingCard = () => {
      
 
 
-      <div className="w-80 pr-10 absolute inset-0 flex flex-col justify-center mx-auto space-y-8">
+      <div className="w-80 pr-10 absolute inset-0 flex flex-col justify-center mx-auto space-y-8" >
         <div className='space-y-1'>
           <h1 className="font-semibold text-xl md:text-3xl text-white">{title}</h1>
           <p className="font-extralight text-white">{subtitle}</p>
