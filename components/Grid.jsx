@@ -7,6 +7,7 @@ import Divider from './Divider'
 import { team } from '@/data/team'
 
 import { scale } from 'framer-motion'
+import Trust from './Trust'
 
 const Grid = () => {
     return (
@@ -33,6 +34,8 @@ const Grid = () => {
             </div>
 
             <Divider/>
+            <Trust/>
+            <Divider />
 
                 {/* /teams */}
             <div className='bg-no-repeat w-full   mx-auto bg-cover mb-10  py-15 space-y-10' style={{ backgroundImage: "url('./hero/bg-lines.png')" }}>
