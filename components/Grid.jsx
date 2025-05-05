@@ -1,8 +1,12 @@
+"use client"
+
 import { investors } from '@/data/investors'
-import Image from 'next/image'
+
 import React from 'react'
 import Divider from './Divider'
 import { team } from '@/data/team'
+
+import { scale } from 'framer-motion'
 
 const Grid = () => {
     return (
@@ -13,10 +17,11 @@ const Grid = () => {
                 <h1 className={`text-lg sm:text-2xl lg:text-4xl   text-center mx-auto font-extrabold`} >Meet our Investors</h1>
                 <h2 className={`text-sm sm:text-xl w-[35%] text-center mx-auto font-light text-neutral-300`} >Built with the trust of world-class founders, industry leaders, and dreamers working to make the web a better place.</h2>
             </div>
-            <div className=' w-2/3 p-4 mb-30  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-13 ' >
+
+            <div  className='  w-2/3 p-4 mb-30  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-13 ' >
                 {investors.map(({ name, title, company, image }, index) => (
-                    <div key={index} className='space-y-2 border bg-gradient-to-br from-transparent via-[#2f2a50] to-transparent p-8  ' >
-                        <img src={image} className='w-64 h-64 object-cover' />
+                    <div key={index} className=' space-y-2 border bg-gradient-to-br from-transparent via-[#2f2a50] to-transparent p-8  ' >
+                        <img src={image} className='w-64 h-64 hover:scale-110 transform transition duration-200 object-cover' />
                         <div>
 
                             <div className='font-semibold'>{name}</div>
@@ -38,7 +43,7 @@ const Grid = () => {
             <div className=' w-2/3 p-4  mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-13 ' >
                 {team.map(({ name, role, bio, image }, index) => (
                     <div key={index} className='space-y-2 border bg-gradient-to-br from-transparent via-[#2f2a50] to-transparent p-8  ' >
-                        <img src={image} className='w-64 h-64 object-cover' />
+                        <img src={image} className='hover:scale-110 transform transition duration-200 w-64 h-64 object-cover' />
                         <div>
 
                             <div className='font-semibold'>{name}</div>
